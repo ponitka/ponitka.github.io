@@ -78,15 +78,17 @@ div#pagetitle{
 }
 
 #headerimg {
+    align-self: flex-start;
     margin-left: 100px;
-    border: 2px solid #FFFFFF;
-    width: 150px;
-    height: 150px;
+    border: 2px solid #FFFFFF;    
     margin-bottom: 10px;
     margin-right: 10px;
 }
 
 #name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     vertical-align: top;
     text-align: center;
 }
