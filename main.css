@@ -255,12 +255,12 @@ body {
 /* Dark mode colors */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #121212;
+        background-color: #1E1E1E;
         color: #EEEEEE;
     }
 
     div#contentpane {
-        background-color: #121212;
+        background-color: #1E1E1E;
         color: #EEEEEE;
     }
 
