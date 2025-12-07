@@ -43,16 +43,15 @@ div#headpane {
 }
 
 div#contentpane {
-    
     position:relative;
     margin-top: -10px;
     margin-left:auto;
     margin-right:auto;
     padding-bottom: 100px;
-    color: #222222;
+    color: #000000;
     font-size:100%;
     width: 85%; 
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     clear: both;
     line-height: 150%;
     z-index: 1;
@@ -248,7 +247,7 @@ table ol {
 
 /* Default (light mode) colors — already defined */
 body {
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     color: #222222;
 }
 
@@ -302,4 +301,58 @@ body {
     #headerimg {
         border: 2px solid #1E1E1E;
     }
+}
+
+/* SVG icons: arxiv, youtube, slides */
+.icon-arxiv::before,
+.icon-slides::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;             /* space between icon and text */
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: -2px;       
+}
+
+.icon-youtube::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;             /* space between icon and text */
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: -4px;       
+}
+
+
+.icon-arxiv::before {
+    background-image: url("icons/arxiv.svg");
+}
+
+.icon-youtube::before {
+    background-image: url("icons/youtube.svg");
+}
+
+.icon-slides::before {
+    background-image: url("icons/slides.svg");
+}
+
+.icon-conference::before {
+    content: "📚";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;          
+    font-size: 14px;          
+    line-height: 1;
+}
+
+a.icon-arxiv,
+a.icon-youtube,
+a.icon-slides,
+a.icon-conference {
+    margin-right: 5px;            
 }
