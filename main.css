@@ -304,13 +304,23 @@ body {
 }
 
 /* SVG icons: arxiv, youtube, slides */
-.icon-arxiv::before,
+.icon-arxiv::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;             
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: -2px;       
+}
+
 .icon-slides::before {
     content: "";
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: 4px;             /* space between icon and text */
+    margin-right: 6px;            
     background-repeat: no-repeat;
     background-size: contain;
     vertical-align: -2px;       
@@ -321,7 +331,7 @@ body {
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: 4px;             /* space between icon and text */
+    margin-right: 6px;            
     background-repeat: no-repeat;
     background-size: contain;
     vertical-align: -4px;       
@@ -345,7 +355,7 @@ body {
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin-right: 4px;          
+    margin-right: 6px;          
     font-size: 14px;          
     line-height: 1;
 }
