@@ -303,7 +303,29 @@ body {
     }
 }
 
-/* SVG icons: arxiv, youtube, slides */
+.icon-dblp::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: -2px;
+}
+
+.icon-scholar::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    margin-left: 2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: -1px;
+}
+
 .icon-arxiv::before {
     content: "";
     display: inline-block;
@@ -350,6 +372,14 @@ body {
     background-image: url("icons/slides.svg");
 }
 
+.icon-dblp::before {
+    background-image: url("icons/dblp.png");
+}
+
+.icon-scholar::before {
+    background-image: url("icons/scholar.svg");
+}
+
 .icon-conference::before {
     content: "📚";
     display: inline-block;
@@ -363,6 +393,8 @@ body {
 a.icon-arxiv,
 a.icon-youtube,
 a.icon-slides,
-a.icon-conference {
+a.icon-conference,
+a.icon-scholar,
+a.icon-dblp {
     margin-right: 5px;            
 }
