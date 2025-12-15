@@ -303,61 +303,29 @@ body {
     }
 }
 
-.icon-dblp::before {
+a.icon-arxiv::before,
+a.icon-youtube::before,
+a.icon-slides::before,
+a.icon-scholar::before,
+a.icon-dblp::before {
     content: "";
     display: inline-block;
-    width: 16px;
     height: 16px;
-    margin-right: 2px;
+    width: auto;
+    margin-right: 6px;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     vertical-align: -2px;
 }
 
-.icon-scholar::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
-    margin-left: 2px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    vertical-align: -1px;
-}
+.icon-youtube::before { aspect-ratio: 28.57 / 20; }
+.icon-arxiv::before   { aspect-ratio: 17.732 / 24.269; }
+.icon-slides::before  { aspect-ratio: 1919.95 / 1786; }
+.icon-scholar::before { aspect-ratio: 1 / 1; }
+.icon-dblp::before    { aspect-ratio: 95 / 120; }
 
-.icon-arxiv::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 2px;             
-    background-repeat: no-repeat;
-    background-size: contain;
-    vertical-align: -2px;       
-}
-
-.icon-slides::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;            
-    background-repeat: no-repeat;
-    background-size: contain;
-    vertical-align: -2px;       
-}
-
-.icon-youtube::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;            
-    background-repeat: no-repeat;
-    background-size: contain;
-    vertical-align: -4px;       
-}
+.icon-scholar { margin-left: 2px; }
 
 
 .icon-arxiv::before {
@@ -383,11 +351,13 @@ body {
 .icon-conference::before {
     content: "📚";
     display: inline-block;
-    width: 16px;
     height: 16px;
-    margin-right: 6px;          
-    font-size: 14px;          
+    aspect-ratio: 1 / 1;
+    margin-right: 5px;
+
+    font-size: 16px;
     line-height: 1;
+    vertical-align: -1px;
 }
 
 a.icon-arxiv,
