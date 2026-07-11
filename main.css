@@ -360,6 +360,18 @@ a.icon-dblp::before {
     vertical-align: -1px;
 }
 
+.icon-website::before {
+    content: "🔗";
+    display: inline-block;
+    height: 16px;
+    aspect-ratio: 1 / 1;
+    margin-right: 5px;
+
+    font-size: 16px;
+    line-height: 1;
+    vertical-align: -0px;
+}
+
 a.icon-arxiv,
 a.icon-youtube,
 a.icon-slides,
